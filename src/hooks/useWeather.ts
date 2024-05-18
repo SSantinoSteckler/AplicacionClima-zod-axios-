@@ -52,7 +52,7 @@ export const useWeather = () => {
 
       const data = await axios(geoUrl);
 
-      if (!data[0]) {
+      if (!data) {
         setNotFound(true);
         return;
       }
